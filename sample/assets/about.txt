@@ -6,4 +6,4 @@ Q  Q : 630404403
 
 博客 : http://blog.csdn.net/qy1387
 
-项目地址:https://github.com/qyxxjd/Learning-use-OpenSource
+项目地址:https://github.com/qyxxjd/QY-OpenSource
