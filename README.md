@@ -1,6 +1,7 @@
 QY-OpenSource
 =============
 开源学院，帮助Android新手学习使用开源项目。
+图文简介：[http://blog.csdn.net/qy1387/article/details/42297467](http://blog.csdn.net/qy1387/article/details/42297467)
 
 ### 2014-11-07项目搭建
 ### 添加ResideMenu侧滑菜单，作为项目的主页  
