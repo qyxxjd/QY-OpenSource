@@ -43,7 +43,9 @@ QY-OpenSource
     一个效果非常好的滑动开关控件。
 ### 添加TouchImageView
     支持缩放、拖拽、双击放大的ImageView
-
+### 添加CollageView
+    可以在界面上随意拖动缩放旋转的ImageView.
+    
 未完待续...
 -----------
 
