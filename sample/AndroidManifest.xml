@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qy.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.qy.main.activity.MainActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qy.main.activity.DragSortListViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.SweetAlertDialogActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.IntroActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.DiscrollViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.TitanicActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.FlabbyListViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.TextJustifyActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.GossipViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.SatelliteMenuActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.ToggleButtonActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.TickPlusDrawableActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.NumberProgressBarActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.CircleProgressActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.CircularProgressButtonActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.SwipeMenuListViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.TouchImageViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qy.main.activity.CollageViewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

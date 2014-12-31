@@ -1,0 +1,3 @@
+这个ListView看上去比标准的“柔和”多了，而且滚动的时候还跟橡皮筋一样的粘着，比较有趣。
+
+Android library to display a ListView which cells are not rigid but flabby and react to ListView scroll and touch events.

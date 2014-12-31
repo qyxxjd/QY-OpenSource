@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">开源学院</string>
+
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <!-- sweet-alert-dialog -->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="default_progressbar">Default Progressbar:</string>
+    
+    <!-- CircularProgressButton -->
+    <string name="Upload">Upload</string>
+    <string name="Error">Error</string>
+    <string name="Complete">Complete</string>
+    <string name="IndeterminateProgressSample">Indeterminate Progress Sample</string>
+    <string name="IntegerProgressSample">Integer Progress Sample</string>
+    <string name="StateChangeSample">State Change Sample</string>
+    <string name="ProgressPaddingSample">Progress Padding Sample</string>
+    <string name="CustomSelectorSample">Custom Selector Sample</string>
+    <array name="cpb_sample_list">
+        <item>@string/IndeterminateProgressSample</item>
+        <item>@string/IntegerProgressSample</item>
+        <item>@string/StateChangeSample</item>
+        <item>@string/ProgressPaddingSample</item>
+        <item>@string/CustomSelectorSample</item>
+    </array>
+    
+    
+</resources>

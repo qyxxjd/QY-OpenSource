@@ -1,0 +1,12 @@
+NumberProgressBar实现了带数字进度的Android进度控件。
+
+The NumberProgressBar is a bar, slim and sexy (every man wants! ).
+
+I decided to do this because I was really tired of android original progress bar. So, I made some change, added more color style for this.
+
+And also you can contribute more color style, or new idea to me.
+
+BTW. My friends also made some other platform's NumberProgressBar：
+Web-Front by kalasoo - https://github.com/kalasoo/NumberProgressBar
+iOS by Ming-Zhe - https://github.com/Ming-Zhe/NumberProgressBar
+Windows Phone by s2003zy - https://github.com/s2003zy

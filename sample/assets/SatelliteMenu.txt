@@ -1,0 +1,11 @@
+点击主按钮，会弹出多个围绕着主按钮排列的子按钮，从而形成一个弹出式菜单。子按钮弹出和消失的动画效果都很棒。这种弹出式菜单按钮应用在Path app中。
+
+'Path' has a very attractive menu sitting on the left bottom corner of the screen. Satellite Menu is the open version of this menu.
+
+For the ones who didnt see path, the menu consists of a main button on the left bottom of the screen. When the user clicks on this button, a number of buttons are popped out of this button. I have resembled this structure to a planet and satellites and thats why I gave the name of this project.
+
+The menu uses built-in animations of Android platform.
+
+Works in API Level 7 (2.1) and above.
+
+Licenced with LGPL.

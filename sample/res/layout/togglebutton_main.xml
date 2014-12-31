@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res/com.qy.main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <com.qy.customview.toggle_button.ToggleButton
+        android:id="@+id/toggle_btn1"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        toggle:borderWidth="2dp"
+        toggle:onColor="#00e500" />
+
+    <com.qy.customview.toggle_button.ToggleButton
+        android:id="@+id/toggle_btn2"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        toggle:borderWidth="1dp"
+        toggle:onColor="#ff0097" />
+
+    <com.qy.customview.toggle_button.ToggleButton
+        android:id="@+id/toggle_btn3"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        toggle:borderWidth="2dp"
+        toggle:offBorderColor="#000"
+        toggle:offColor="#ddd"
+        toggle:onColor="#f00"
+        toggle:spotColor="#00f" />
+
+    <com.qy.customview.toggle_button.ToggleButton
+        android:id="@+id/toggle_btn4"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

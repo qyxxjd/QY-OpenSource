@@ -1,0 +1,78 @@
+/*
+ * Copyright 2014 Mathew Kurian
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * -------------------------------------------------------------------------
+ *
+ * TextJustifyActivity.java
+ * @author Mathew Kurian
+ *
+ * From TextJustify-Android Library v2.0
+ * https://github.com/bluejamesbond/TextJustify-Android
+ *
+ * Please report any issues
+ * https://github.com/bluejamesbond/TextJustify-Android/issues
+ *
+ * Date: 11/1/14 3:03 PM
+ */
+
+package com.qy.main.activity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.qy.customview.satellite_menu.SatelliteMenu;
+import com.qy.customview.satellite_menu.SatelliteMenu.SateliteClickedListener;
+import com.qy.customview.satellite_menu.SatelliteMenuItem;
+import com.qy.main.R;
+
+public class SatelliteMenuActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.satellite_menu_main);
+        
+        SatelliteMenu menu = (SatelliteMenu) findViewById(R.id.menu);
+        
+//		  Set from XML, possible to programmatically set        
+//        float distance = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 170, getResources().getDisplayMetrics());
+//        menu.setSatelliteDistance((int) distance);
+//        menu.setExpandDuration(500);
+//        menu.setCloseItemsOnClick(false);
+//        menu.setTotalSpacingDegree(60);
+        
+        List<SatelliteMenuItem> items = new ArrayList<SatelliteMenuItem>();
+        items.add(new SatelliteMenuItem(4, R.drawable.ic_1));
+        items.add(new SatelliteMenuItem(4, R.drawable.ic_3));
+        items.add(new SatelliteMenuItem(4, R.drawable.ic_4));
+        items.add(new SatelliteMenuItem(3, R.drawable.ic_5));
+        items.add(new SatelliteMenuItem(2, R.drawable.ic_6));
+        items.add(new SatelliteMenuItem(1, R.drawable.ic_2));
+//        items.add(new SatelliteMenuItem(5, R.drawable.sat_item));
+        menu.addItems(items);        
+        
+        menu.setOnItemClickedListener(new SateliteClickedListener() {
+			public void eventOccured(int id) {
+				Log.i("sat", "Clicked on " + id);
+				Toast.makeText(SatelliteMenuActivity.this, "Clicked on " + id, Toast.LENGTH_SHORT).show();
+			}
+		});
+    }
+}

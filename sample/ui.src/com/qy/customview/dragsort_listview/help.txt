@@ -1,0 +1,41 @@
+
+DragSortListView
+是一个支持拖拽排序和左右滑动删除功能的自定义ListView，重写了 TouchInterceptor (TI) 类来提供更加优美的拖拽动画效果。包含如下特性
+
+	完美的拖拽支持 (应该没有视觉问题)
+	在拖动的时候提供更平滑的滚动列表滚动
+	支持每个ListItem高度的多样性
+	Public startDrag() and stopDrag() methods.
+	有公开的接口可以自定义拖动的View
+
+<xml attr名称>: (<datatype 数据类型>, <默认值>) <属性描述>.
+XML attributes
+collapsed_height: (dimension, 1px) 拖动其实位置占位符的高度。不能为0.Height of placeholder at original drag position. Cannot be zero.
+drag_scroll_start: (float, 0.3) 拖动时开始滚动ListView的区域（为DSLV 高度的分数值，在0到1之前）Start of drag-scroll regions (defined by a fraction of the total DSLV height; i.e. between 0 and 1).
+max_drag_scroll_speed: (float, 0.5) 默认线性加速的拖动时滚动的最大速度。单位：像素/毫秒。Maximum drag-scroll speed for default linear drag-scroll profile. Units of pixels/millisecond.
+float_alpha: (float, 1.0) 拖动View的透明度。取值0到1 ， 1代表不透明。Transparency of floating View. Value from 0 to 1 where 1 is opaque.
+slide_shuffle_speed: (float, 0.7) 拖动View下方的View挤走的动画速度。Speed of shuffle animations underneath floating View. A value of 0 means a shuffle animation is always in progress, whereas a value of 1 means items snap from position to position without animation.
+drop_animation_duration: (int, 150) 拖动放下时候的动画时间。Drop animation smoothly centers the floating View over the drop slot before destroying it. Duration in milliseconds.
+remove_animation_duration: (int, 150) 删除一个ListView的空白区域消失的动画时间。Remove animation smoothly collapses the empty slot when an item is removed. Duration in milliseconds.
+track_drag_sort: (bool, false) 调试的选项。Debugging option; explained below.
+use_default_controller: (bool, true) DSLV是否创建一个默认的DragSortController 对象，并且设置如下属性的值。如果该属性为false，则如下的属性忽略。Have DSLV create a DragSortController instance and pass the following xml attributes to it. If you set this to false, ignore the following attributes.
+float_background_color: (color, BLACK) 拖动View的北背景色。默认情况下拖动View是当前拖动的Item的图像缓存。Set the background color of the floating View when using the default DragSortController. Floating View in this case is a snapshot of the list item to be dragged.
+drag_handle_id: (id, 0) ListItem中的一个View的资源id(或者ListItem的根view)。这个id用来识别“拖动的手柄”，只有当点击该view的时候才会触发拖动操作。使用默认DragSortController并且支持拖动操作的时候需要设置该属性。Android resource id that points to a child View of a list item (or the root View of the list item layout). This identifies the “drag handle,” or the View within a list item that must be touched to start a drag-sort of that item. Required if drags are to be enabled using the default DragSortController.
+sort_enabled: (bool, true) 是否启用拖动排序功能（如果您只需要左右滑动删除，则无需启用排序功能）Enable sorting of dragged item (disabling is useful when you only want item removal).
+drag_start_mode: (enum, “onDown”) 设置启动拖动的手势。Sets the gesture for starting a drag.
+“onDown”:当用户按下拖动手柄的时候启动拖动操作。 Drag starts when finger touches down on the drag handle.
+“onDrag”: 当用户按下拖动手柄开始拖动的时候启动拖动操作。Drag starts when finger touches down on drag handle and then drags (allows item clicks and long clicks).
+“onLongPress”:在拖动手柄上长按时候启动拖动操作。 Drag starts on drag handle long press (allows item clicks).
+remove_enabled: (bool, false) 是否启用拖动删除的功能。Enable dragged item removal by one of the remove_mode options below.
+remove_mode: (enum, “flingRight”) 设置启用删除的手势。Sets the gesture for removing the dragged item.
+“clickRemove”:点击click_remove_id对应的View来删除。 Click on item child View with id click_remove_id.
+“flingRight”: 快速向右滑动。Fling to the right; get outta here!
+“flingLeft”: 快速向左滑动。Fling to the left; sayonara sucker!
+“slideRight”:向左滑动的时候，Floating View会变得透明。透明后释放，删除Item。 Floating View fades as you slide your finger to the right; lifting while faded removes item.
+“slideLeft”: 同上，向右滑动。Floating View fades as you slide your finger to the right; lifting while faded removes item.
+click_remove_id: (id, 0) 当 remove_mode="clickRemove"并且remove_enabled="true"时候指定的删除一个Item的View。DragSortController使用了该属性。Android resource id that points to a child View of a list item. When remove_mode="clickRemove" andremove_enabled="true", a click on this child View removes the containing item. This attr is used by DragSortController.
+
+
+更多信息参考API  http://bauerca.github.com/drag-sort-listview.或者 查看项目源代码。
+
+demo地址：https://github.com/bauerca/drag-sort-listview

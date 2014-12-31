@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/main_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="这是标题"/>
+    
+    <ImageView 
+        android:id="@+id/main_item_img"
+        android:layout_width="16dp"
+        android:layout_height="16dp" 
+        android:src="@drawable/main_icon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/main_item_title" />
+    
+    <TextView
+        android:id="@+id/main_item_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@id/main_item_title" 
+        android:text="这是简介这是简介这是简介这是简介这是简介这是简介"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

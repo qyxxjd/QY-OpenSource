@@ -1,0 +1,7 @@
+自于jakewharton大神的力作，安卓里面的视图注入库
+可以对任意的View对象使用注入，当然了，需要提供view root的对象
+简化list adapter中的View Holder模式
+View "injection" library for Android which uses annotation processing to generate boilerplate code for you.
+Eliminate findViewById calls by using @InjectView on fields.
+Group multiple viewsin a list using @InjectViews. Operate on all of them at once with actions, setters, or properties.
+Eliminate anonymous inner-classes for listeners by annotating methods with @OnClick and others.

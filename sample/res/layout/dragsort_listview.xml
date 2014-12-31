@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.qy.main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qy.customview.dragsort_listview.DragSortListView
+        android:id="@+id/dragsort_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:cacheColorHint="#EDF8FF"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+	    android:divider="#bacac6"
+	    android:dividerHeight="0.1dp"
+	    android:fastScrollEnabled="true"
+	    dslv:drag_enabled="true"
+	    dslv:collapsed_height="2dp"
+	    dslv:drag_scroll_start="0.33"
+	    dslv:max_drag_scroll_speed="0.5"
+	    dslv:float_alpha="0.8"
+	    dslv:slide_shuffle_speed="0.3"
+	    dslv:track_drag_sort="false"
+	    dslv:use_default_controller="true"
+	    dslv:drag_handle_id="@id/drag_handle"
+	    dslv:sort_enabled="true"
+	    dslv:remove_enabled="true"
+	    dslv:drag_start_mode="onDown"
+	    dslv:remove_mode="flingRemove" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+DragSortListView（DSLV）是Android ListView的一个扩展，支持拖拽排序和左右滑动删除功能。重写了TouchInterceptor（TI）类来提供更加优美的拖拽动画效果。
+
+DSLV主要特性：
+完美的拖拽支持；
+在拖动时提供更平滑的滚动列表滚动；
+支持每个ListItem高度的多样性
+公开startDrag()和stopDrag()方法；
+有公开的接口可以自定义拖动的View。
+
+DragSortListView适用于带有任何优先级的列表：收藏夹、播放列表及清单等，算得上是目前Android开源实现拖动排序操作最完美的方案。

@@ -1,0 +1,7 @@
+﻿导入项目后会报错的，需要在eclipse里面配置一下butterknife环境，
+1.右键你的工程，选择“Properties”，
+2.选择"Java Compiler" ，
+3.选择 "Java Compiler"—"Annotation Processing" 并选择"Enable annotation processing"，
+4.选择 "Java Compiler“—”Annotation Processing“—”Factory Path"，选择butterknife-6.0.0.jar的路径。
+官网配置教程：
+http://jakewharton.github.io/butterknife/ide-eclipse.html

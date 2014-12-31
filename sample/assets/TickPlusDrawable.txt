@@ -1,0 +1,1 @@
+作者很有个性的标语：I'm not a Gif maker, I'm a developer ，解释了这个项目的目的。tickplusdrawable用纯代码而不是gif图片实现了一个动画按钮。

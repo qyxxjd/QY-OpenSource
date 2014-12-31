@@ -1,0 +1,4 @@
+最好用的可缩放ImagView，继承自ImageView具有ImageView的所有功能；除此之外，还有缩放、拖拽、双击放大等功能，并伴有动画效果。
+
+我在github上找到了三个，分别是 PhotoView、ImageViewZoom、TouchImageView。经过比较TouchImageView在性能上最好、集成简单。
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sat="http://schemas.android.com/apk/res/com.qy.main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.qy.customview.satellite_menu.SatelliteMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left" 
+        android:layout_margin="8dp"
+        sat:satelliteDistance="170dp"
+        sat:mainImage="@drawable/ic_launcher"
+        sat:totalSpacingDegree="90"
+        sat:closeOnClick="true"
+        sat:expandDuration="500"/>
+    
+</FrameLayout>

@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/intro_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="这是标题"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/intro_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="all"
+            android:text="这是简介这是简介这是简介这是简介这是简介这是简介" />
+        
+        <TextView
+            android:id="@+id/intro_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="all"
+            android:visibility="gone"
+            android:text="项目主页：" />
+
+        <Button
+            android:id="@+id/intro_btn"
+            android:layout_width="match_parent"
+            style="@style/dialog_blue_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="演示" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+XlistView
+可以实现流行的下拉刷新功能以及上拉加载更多的分页功能
+优点是集成很方便，而且下拉刷新后释放，反弹的过度效果也做得很顺滑.
+
+
+
+文件清单
+
+java:
+	XListView.java
+	XListViewFooter.java
+	XListViewHeader.java
+
+layout：
+	xlistview_footer.xml
+	xlistview_header.xml
+
+图片：
+	xlistview_arrow.png
+
+strings.xml 加入：
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+

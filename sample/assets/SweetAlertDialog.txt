@@ -1,0 +1,2 @@
+Android版的SweetAlert，清新文艺，快意灵动的甜心弹框.
+灵感来源于JS版SweetAlert.
