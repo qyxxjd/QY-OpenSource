@@ -53,5 +53,4 @@ QY-OpenSource
 ### 关于 
 Q  Q:630404403 <br />
 微信:630404403 <br />
-邮箱:630404403@qq.com <br />
 博客:[http://blog.csdn.net/qy1387](http://blog.csdn.net/qy1387) 
